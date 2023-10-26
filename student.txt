@@ -1,0 +1,5 @@
+Student name: Ahmad Natfaji
+Student number: 715916
+Student class: INF1B
+GitHub Repository: https://github.com/Natfaji/Natfaji.github.io
+GitHub Pages URL: https://natfaji.github.io/
