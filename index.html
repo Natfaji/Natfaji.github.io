@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Onderhoud je voertuig | Home</title>
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Ahmad Natfaji">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+	<header id="mainHeader">
+		<a href="index.html" class="logo">
+			<img src="img/logo-svg.svg" title="logo" alt="logo" class="logo">
+		</a>
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="obd2.html">OBD2</a>
+			<a href="onderDeMotorkap.html">Onder De Motorkap</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+
+		<span id="burgerMenu">
+			<input type="checkbox" name="burgerMenuInput" id="burgerMenuInput" onchange="burgerMenuClick()">
+			<label class="chevron" for="burgerMenuInput"></label>
+		</span>
+	</header>
+
+	<main>
+		<section id="banner">
+			<figure>
+				<img src="img/Banner.jpg" title="logo" alt="logo" class="bannerImage">
+			</figure>
+
+			<span class="textContainer">
+				<section class="title">
+					<h1>
+						Je auto <em>zelf</em> onderhouden&quest;
+					</h1>
+					<h2>
+						Kan dat&quest;
+					</h2>
+				</section>
+
+				<section class="paragraph">
+					<p>
+						Om het simpele feit dat het je veel geld kan besparen&period; Een auto onderhouden is niet zo
+						moeilijk als je denkt&comma; iemand met voldoende tijd en motivatie kan zelf een auto
+						onderhouden&period;
+					</p>
+				</section>
+			</span>
+		</section>
+
+		<span class="spacer"></span>
+
+		<section id="KanIkMijnAutoOnderhouden">
+			<figure>
+				<img src="img/img1.jpg" title="Man repairing a car&apos;s engine"
+					alt="Picture of a man repairing a car&apos;s engine" class="logo">
+
+				<figcaption>Man repairing a car&apos;s engine</figcaption>
+			</figure>
+
+			<article>
+				<h2>
+					Kan ik mijn auto onderhouden&quest;
+					Hoe dan&quest;
+				</h2>
+
+				<p>
+					Allereerst heb je het <em>juiste</em> gereedschap nodig&period; Je kunt beginnen met het kopen van
+					een klein goedkoop OBD2&hyphen;scanner en ook een geschikt gereedschap dat past bij het soort
+					onderhoud dat je gaat doen&period; Om te weten wat er aan jouw auto onderhoud nodig heeft&comma;
+					kunt je gebruik maken van de OBD2 scanner&period; Deze kan je veel vertellen over wat er eventueel
+					aan jouw auto mankeert&period; Om hier meer over te weten te komen&comma; lees dan verder op het
+					pagina &lbrack;OBD2&rbrack;&period;
+				</p>
+				
+				<a class="CTA" href="obd2.html">Lees verder</a>
+			</article>
+		</section>
+	</main>
+
+	<!-- <aside>
+		<h3>
+			Go To
+		</h3>
+		<ul>
+			<li>
+				<a href="#banner">Top</a>
+			</li>
+			<li>
+				<a href="#KanIkMijnAutoOnderhouden">Kan ik mijn auto onderhouden</a>
+			</li>
+		</ul>
+	</aside> -->
+
+	<footer id="cookiesMessage">
+		<section>
+			<p>
+				This site uses cookies to improve your browsing experience, perform analytics and research, and conduct
+				advertising.
+			</p>
+			<p>
+				Clicking Accept all Cookies indicates you agree to our use of cookies on your device.
+			</p>
+			<p>
+				Clicking Reject all means you do not agree to our use of non-strictly necessary cookies on your device.
+			</p>
+		</section>
+
+		<section>
+			<button id="acceptCookies" onclick="removeCookie()">Accept all cookies</button>
+			<button id="rejectCookies" onclick="removeCookie()">Reject all cookies</button>
+		</section>
+	</footer>
+
+	<footer id="bottemFooter">
+		<nav id="footerNav">
+			<ul>
+				<li>
+					<a href="index.html">home</a>
+				</li>
+				<li>
+					<a href="product.html">Product</a>
+				</li>
+				<li>
+					<a href="service.html">Service</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<a href="index.html" id="footerLogo">
+			<img src="img/logo-svg.svg" title="logo" alt="logo" class="logo">
+		</a>
+		<p class="copyright">Copyright &copy; 2022 | Made by Ahmad</p>
+	</footer>
+</body>
+
+</html>
+
+<script>
+	function burgerMenuClick() {
+		document.getElementById("mainHeader").classList.toggle("burgerMenuActive");
+	}
+
+	function removeCookie() {
+		document.getElementById("cookiesMessage").style.display = "none";
+	}
+</script>
