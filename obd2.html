@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Onderhoud je voertuig | OBD2</title>
+	<meta name="author" content="Ahmad Natfaji">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/obd2.css">
+</head>
+
+<body>
+	<header id="mainHeader">
+		<a href="index.html" class="logo">
+			<img src="img/logo-svg.svg" title="logo" alt="logo" class="logo">
+		</a>
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="obd2.html">OBD2</a>
+			<a href="onderDeMotorkap.html">Onder De Motorkap</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+
+		<span id="burgerMenu">
+			<input type="checkbox" name="burgerMenuInput" id="burgerMenuInput" onchange="burgerMenuClick()">
+			<label class="chevron" for="burgerMenuInput"></label>
+		</span>
+	</header>
+
+	<main>
+		<h1 class="title">OBD2</h1>
+		<section>
+			<figure>
+				<img src="img/img1.jpg" title="Man repairing a car&apos;s engine"
+					alt="Picture of a man repairing a car&apos;s engine" class="logo">
+
+				<figcaption>Man repairing a car&apos;s engine</figcaption>
+			</figure>
+
+			<article>
+				<h2>
+					Wat is een OBD2 port in je auto&quest;
+				</h2>
+
+				<p>
+					Een OBD2 is een poort in uw auto die wordt gebruikt om met het voertuig te communiceren&period; Dit
+					gebeurt door middel van een OBD2&hyphen;diagnoseapparaat&period; Dit apparaat kan bijvoorbeeld
+					fouten van de computer van het voertuig lezen&period; Je ontvangt deze fouten als codes&comma;
+					vervolgens kunt je die codes op het internet zoeken&period; Maar dat is niet alles wat een OBD2 kan
+					doen&comma; het kan ook informatie geven over koelvloeistof&comma; temperatuur&comma;
+					rijsnelheid&comma; gasklepstand en meer van het voertuig&comma; functionaliteit van je voertuig
+					veranderen&comma; of zelf je voertuig bedienen&comma; het wordt ook gebruikt bij autosleutel winkels
+					om nieuwe sleutels in te leren in je auto&period;
+				</p>
+			</article>
+		</section>
+
+		<span class="spacer"></span>
+
+		<section>
+			<article>
+				<h2>
+					OBD port typen
+				</h2>
+
+				<p> Vroeger voor OBD2 had je OBD1 of wel OBD&period; OBD1 had een andere vorm&comma; maar ook andere
+					functionaliteiten&comma; namelijk emissies&comma; motoren en brandstofsystemen&period; meeste
+					apparaten voor OBD1 werkt niet op OBD2 en omgekeerd&period;
+				</p>
+
+				<ul>
+					<li>
+						1996 &hyphen; OBD&hyphen;II wordt verplicht voor alle auto&apos;s die in de Verenigde Staten
+						worden geproduceerd&period;
+					</li>
+
+					<li>
+						2001 &hyphen; EOBD &lpar;Europese versie van OBD&rpar; wordt verplicht voor alle
+						benzinevoertuigen in de Europese Unie &lpar;EU&rpar;&period;
+					</li>
+
+					<li>
+						2003 &hyphen; EOBD wordt verplicht voor alle dieselvoertuigen in de EU&period;
+					</li>
+				</ul>
+			</article>
+
+			<figure>
+				<img src="img/img2.jpg" title="verschillende types obd2 cables" alt="verschillende types obd2 cables"
+					class="logo">
+
+				<figcaption>verschillende types obd2 cables</figcaption>
+			</figure>
+		</section>
+
+		<span class="spacer"></span>
+
+		<section>
+			<figure>
+				<img src="img/img3.png" title="obd&hyphen;diagnostisch apparaat" alt="obd&hyphen;diagnostisch apparaat"
+					class="logo">
+
+				<figcaption>obd&hyphen;diagnostisch apparaat</figcaption>
+			</figure>
+
+			<article>
+				<h2>
+					OBD2 apparaten
+				</h2>
+
+				<p>
+					Er is een grote keuze aan OBD2&hyphen;apparaten&period; je kunt bijvoorbeeld gaan voor de
+					&quot;elm327&quot;&comma; dit is een goedkope obd2 scanner die je alle foutcodes van je auto kan
+					laten zien&period; Deze is via bluetooth of wifi gekoppeld aan je telefoon en dan kun je het
+					gebruiken via de app&period; Je kunt ook kiezen om voor de duurdere optie te gaan dan kun je wel een
+					apparaat kopen voor 200 tot 300 euro maar als je een professioneel apparaat wilt dan ga je 2500 tot
+					4000 euro betalen&comma; maar deze apparaten zijn de kosten waard&comma; met zo een apparaat kun je
+					allerlei dingen over je auto bedienen zoals lichten&comma; duren&comma; stuur&comma; gas&comma; de
+					kilometerteller en nog veel meer&period;
+				</p>
+			</article>
+		</section>
+	</main>
+
+	<footer id="cookiesMessage">
+		<section>
+			<p>
+				This site uses cookies to improve your browsing experience, perform analytics and research, and conduct
+				advertising.
+			</p>
+			<p>
+				Clicking Accept all Cookies indicates you agree to our use of cookies on your device.
+			</p>
+			<p>
+				Clicking Reject all means you do not agree to our use of non-strictly necessary cookies on your device.
+			</p>
+		</section>
+
+		<section>
+			<button id="acceptCookies" onclick="removeCookie()">Accept all cookies</button>
+			<button id="rejectCookies" onclick="removeCookie()">Reject all cookies</button>
+		</section>
+	</footer>
+
+	<footer id="bottemFooter">
+		<nav id="footerNav">
+			<ul>
+				<li>
+					<a href="index.html">home</a>
+				</li>
+				<li>
+					<a href="product.html">Product</a>
+				</li>
+				<li>
+					<a href="service.html">Service</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<a href="index.html" id="footerLogo">
+			<img src="img/logo-svg.svg" title="logo" alt="logo" class="logo">
+		</a>
+		<p class="copyright">Copyright &copy; 2022 | Made by Ahmad</p>
+	</footer>
+</body>
+
+</html>
+
+<script>
+	function burgerMenuClick() {
+		document.getElementById("mainHeader").classList.toggle("burgerMenuActive");
+	}
+
+	function removeCookie() {
+		document.getElementById("cookiesMessage").style.display = "none";
+	}
+</script>

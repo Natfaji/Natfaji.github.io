@@ -1,0 +1,10 @@
+.title {
+	text-align: center;
+}
+
+section ul,
+section ol {
+	padding: revert;
+}
+
+@media (min-width: 768px) {}
