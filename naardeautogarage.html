@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Onderhoud je voertuig &vert; Naar de autogarage</title>
+	<meta name="author" content="Ahmad Natfaji">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/obd2.css">
+</head>
+
+<body>
+	<header id="mainHeader">
+		<a href="index.html" class="logo">
+			<img src="img/logo-svg.svg" title="logo" alt="logo" class="logo">
+		</a>
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="obd2.html">OBD2</a>
+			<a href="onderDeMotorkap.html">Onder De Motorkap</a>
+			<a href="naardeautogarage.html">Naar de autogarage</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+
+		<span id="burgerMenu">
+			<input type="checkbox" name="burgerMenuInput" id="burgerMenuInput" onchange="burgerMenuClick()">
+			<label class="chevron" for="burgerMenuInput"></label>
+		</span>
+	</header>
+
+	<main>
+		<h1 class="title">Naar de autogarage</h1>
+		<section>
+			<figure>
+				<img src="img/img9.jpg" title="autogarage" alt="foto van een autogarage" class="logo">
+
+				<figcaption>autogarage</figcaption>
+			</figure>
+
+			<article>
+				<h2>
+					Wanneer moet je naar de garage&quest;
+				</h2>
+
+				<p>
+					Soms zijn er gevallen waarin je iets niet zelf kunt repareren&comma; zoals het vervangen of uit
+					elkaar halen van je motor of andere problemen die je niet zelf kunt oplossen zonder specifiek
+					gereedschap of onderdelen&comma; dan moet je naar een autogarage&period;
+				</p>
+			</article>
+		</section>
+
+		<span class="spacer"></span>
+
+		<section>
+			<article>
+				<h2>
+					Te complexe reparaties
+				</h2>
+
+				<p> Voor te complexe reparaties kunt je het beste naar een autogarage gaan die het benodigde gereedschap
+					heeft&period; Daarnaast heb je de kans dat je iets verkeerd doet waardoor grotere problemen kunnen
+					ontstaan&comma; het uit elkaar halen van een motorblok bijvoorbeeld is een zeer lastige werk en
+					bevat veel onderdelen die in een bepaalde volgorde uit elkaar moeten worden gehaald en vervolgens
+					weer in elkaar worden gezet in omgekeerde volgorde&period;
+				</p>
+			</article>
+
+			<figure>
+				<img src="img/img8.jpeg" title="auto reparaties" alt="iemand die een auto repareert" class="logo">
+			</figure>
+		</section>
+
+		<span class="spacer"></span>
+
+		<section>
+			<figure>
+				<img src="img/img7.png" title="Veiligheid voor alles" alt="een bord met de tekst 'Safety First' erop"
+					class="logo">
+
+				<figcaption>Veiligheid voor alles</figcaption>
+			</figure>
+
+			<article>
+				<h2>
+					Veiligheid
+				</h2>
+
+				<p>
+					Een andere reden om naar een autogarage te gaan is als je werkzaamheden wilt laten uitvoeren aan een
+					van de veiligheidsonderdelen van je auto&comma; denk aan je rem of airbag&comma; deze zijn erg
+					belangrijk voor jouw veiligheid en die van anderen&comma; want als je rem het niet doet dan kun je
+					zeer snel een ongeluk veroorzaken&period;
+				</p>
+			</article>
+		</section>
+	</main>
+
+	<footer id="cookiesMessage">
+		<section>
+			<p>
+				This site uses cookies to improve your browsing experience&comma; perform analytics and research&comma;
+				and conduct
+				advertising&period;
+			</p>
+			<p>
+				Clicking Accept all Cookies indicates you agree to our use of cookies on your device&period;
+			</p>
+			<p>
+				Clicking Reject all means you do not agree to our use of non&hyphen;strictly necessary cookies on your
+				device&period;
+			</p>
+		</section>
+
+		<section>
+			<button id="acceptCookies" onclick="removeCookie()">Accept all cookies</button>
+			<button id="rejectCookies" onclick="removeCookie()">Reject all cookies</button>
+		</section>
+	</footer>
+
+	<footer id="bottemFooter">
+		<nav id="footerNav">
+			<ul>
+				<li>
+					<a href="index.html">home</a>
+				</li>
+				<li>
+					<a href="product.html">Product</a>
+				</li>
+				<li>
+					<a href="service.html">Service</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<a href="index.html" id="footerLogo">
+			<img src="img/logo-svg.svg" title="logo" alt="logo" class="logo">
+		</a>
+		<p class="copyright">Copyright &copy; 2022 &vert; Made by Ahmad</p>
+	</footer>
+</body>
+
+</html>
+
+<script>
+	function burgerMenuClick() {
+		document.getElementById("mainHeader").classList.toggle("burgerMenuActive");
+	}
+
+	function removeCookie() {
+		document.getElementById("cookiesMessage").style.display = "none";
+	}
+</script>
