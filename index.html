@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
 	<meta charset="UTF-8">
@@ -10,6 +10,7 @@
 	<meta name="author" content="Ahmad Natfaji">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/index.css">
+	<script src="js/script.js"></script>
 </head>
 
 <body>
@@ -33,34 +34,32 @@
 	</header>
 
 	<main>
+		<h1 class="title">zelf Je auto onderhouden</h1>
+
 		<section id="banner">
 			<figure>
 				<img src="img/Banner.jpg" title="logo" alt="logo" class="bannerImage">
 			</figure>
 
-			<span class="textContainer">
-				<section class="title">
-					<h1>
-						Je auto <em>zelf</em> onderhouden&quest;
-					</h1>
-					<h2>
-						Kan dat&quest;
-					</h2>
-				</section>
+			<article class="textContainer">
+				<h2>
+					Je auto <em>zelf</em> onderhouden&quest;
+				</h2>
+				<h2>
+					Kan dat&quest;
+				</h2>
 
-				<section class="paragraph">
-					<p>
-						Om het simpele feit dat het je veel geld kan besparen&period; Een auto onderhouden is niet zo
-						moeilijk als je denkt&comma; iemand met voldoende tijd en motivatie kan zelf een auto
-						onderhouden&period;
-					</p>
-				</section>
-			</span>
+				<p>
+					Om het simpele feit dat het je veel geld kan besparen&period; Een auto onderhouden is niet zo
+					moeilijk als je denkt&comma; iemand met voldoende tijd en motivatie kan zelf een auto
+					onderhouden&period;
+				</p>
+			</article>
 		</section>
 
 		<span class="spacer"></span>
 
-		<section id="KanIkMijnAutoOnderhouden">
+		<section>
 			<figure>
 				<img src="img/img1.jpg" title="Man repairing a car&apos;s engine"
 					alt="Picture of a man repairing a car&apos;s engine" class="logo">
@@ -148,13 +147,3 @@
 </body>
 
 </html>
-
-<script>
-	function burgerMenuClick() {
-		document.getElementById("mainHeader").classList.toggle("burgerMenuActive");
-	}
-
-	function removeCookie() {
-		document.getElementById("cookiesMessage").style.display = "none";
-	}
-</script>
