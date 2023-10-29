@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Onderhoud je voertuig &vert; Contact</title>
+	<meta name="author" content="Ahmad Natfaji">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+	<header id="mainHeader">
+		<a href="index.html" class="logo">
+			<img src="img/logo-svg.svg" title="logo" alt="logo" class="logo">
+		</a>
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="obd2.html">OBD2</a>
+			<a href="onderDeMotorkap.html">Onder De Motorkap</a>
+			<a href="naardeautogarage.html">Naar de autogarage</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+
+		<span id="burgerMenu">
+			<input type="checkbox" name="burgerMenuInput" id="burgerMenuInput" onchange="burgerMenuClick()">
+			<label class="chevron" for="burgerMenuInput"></label>
+		</span>
+	</header>
+
+	<main>
+		<h1 class="title">Contact</h1>
+		<section id="contact">
+			<form id="contactForm" action="thankyou.html" method="post">
+				<label for="prefix">Aanhef: &ast;</label>
+				<select name="prefix" id="prefix" required>
+					<option value="" selected disabled>Kies een aanhef</option>
+					<option value="dhr">Dhr</option>
+					<option value="mevr">Mevr</option>
+					<option value="other">Anders</option>
+				</select>
+
+				<label for="name">Naam: &ast;</label>
+				<input type="text" name="name" id="name" placeholder="Naam" required>
+
+				<label for="email">Email: &ast;</label>
+				<input type="email" name="email" id="email" placeholder="Email" required>
+
+				<label for="phoneNumber">Telefoonnummer: </label>
+				<input type="tel" name="phoneNumber" placeholder="Telefoonnummer" id="phoneNumber">
+
+				<label for="request">Vraag/verzoek: &ast;</label>
+				<textarea name="request" id="request" cols="30" rows="10" placeholder="U vraag of verzoek"
+					required></textarea>
+				<button type="submit">Versturen</button>
+			</form>
+		</section>
+	</main>
+
+	<footer id="cookiesMessage">
+		<section>
+			<p>
+				This site uses cookies to improve your browsing experience&comma; perform analytics and research&comma;
+				and conduct advertising&period;
+			</p>
+			<p>
+				Clicking Accept all Cookies indicates you agree to our use of cookies on your device&period;
+			</p>
+			<p>
+				Clicking Reject all means you do not agree to our use of non&hyphen;strictly necessary cookies on your
+				device&period;
+			</p>
+		</section>
+
+		<section>
+			<button id="acceptCookies" onclick="removeCookie()">Accept all cookies</button>
+			<button id="rejectCookies" onclick="removeCookie()">Reject all cookies</button>
+		</section>
+	</footer>
+
+	<footer id="bottemFooter">
+		<nav id="footerNav">
+			<ul>
+				<li>
+					<a href="index.html">home</a>
+				</li>
+				<li>
+					<a href="product.html">Product</a>
+				</li>
+				<li>
+					<a href="service.html">Service</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<a href="index.html" id="footerLogo">
+			<img src="img/logo-svg.svg" title="logo" alt="logo" class="logo">
+		</a>
+		<p class="copyright">Copyright &copy; 2022 &vert; Made by Ahmad</p>
+	</footer>
+</body>
+
+</html>
+
+<script>
+	function burgerMenuClick() {
+		document.getElementById("mainHeader").classList.toggle("burgerMenuActive");
+	}
+
+	function removeCookie() {
+		document.getElementById("cookiesMessage").style.display = "none";
+	}
+</script>
