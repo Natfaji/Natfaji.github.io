@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Onderhoud je voertuig &vert; Tips</title>
+	<link rel="icon" type="image/x-icon" href="img/logo-svg.svg">
+	<meta name="author" content="Ahmad Natfaji">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/tips.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+	<header id="mainHeader">
+		<a href="index.html" class="logo">
+			<img src="img/logo-svg.svg" title="logo" alt="logo" class="logo">
+		</a>
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="obd2.html">OBD2</a>
+			<a href="onderDeMotorkap.html">Onder De Motorkap</a>
+			<a href="naardeautogarage.html">Naar de autogarage</a>
+			<a href="tips.html">Tips</a>
+			<a href="contact.html">Contact</a>
+		</nav>
+
+		<span id="burgerMenu">
+			<input type="checkbox" name="burgerMenuInput" id="burgerMenuInput" onchange="burgerMenuClick()">
+			<label class="chevron" for="burgerMenuInput"></label>
+		</span>
+	</header>
+
+	<main>
+		<h1 class="title">Tips</h1>
+
+		<section id="Voor-dat-je-begint">
+			<figure>
+				<img src="img/img12.jpg" title="searching the internet"
+					alt="een foto in cartoonstijl van mensen die met een vergrootglas naar een webpagina kijken">
+
+				<figcaption>Het internet zoeken</figcaption>
+			</figure>
+
+			<article>
+				<h2>
+					Voor dat je begint&excl;
+				</h2>
+
+				<p>
+					Voordat je begint met het onderhouden van je auto moet je eerst weten wat je moet doen en hoe je het
+					moet doen&period; Je kunt dit doen door het internet te gebruiken en te zoeken naar de juiste
+					informatie die je nodig hebt&period; Je kunt ook een boek kopen over het onderhouden van je
+					auto&period; Als je eenmaal weet wat je moet doen en hoe je het moet doen kun je beginnen met het
+					onderhouden van je auto&period;
+				</p>
+			</article>
+		</section>
+
+		<span class="spacer"></span>
+
+		<section id="problemen-opsporen">
+			<figure>
+				<img src="img/img13.jpg" title="check engine light" alt="foto van het controlelampje van de auto ">
+
+				<figcaption>controlelampje of check engine light</figcaption>
+			</figure>
+
+			<article>
+				<h2>
+					problemen opsporen
+				</h2>
+
+				<p>
+					Als je nog geen problemen hebt met je auto moet je alsnog opletten op de kleine dingen die je
+					misschien kunnen leiden naar grotere problemen in de toekomst&period; Enkele seintjes zijn&colon;
+				</p>
+
+				<table>
+					<thead>
+						<tr>
+							<th>probleem</th>
+							<th>uitleg</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><strong>Check Engine Light&colon;</strong></td>
+							<td>Als het controlelampje op het dashboard brandt&comma;
+								kan dit duiden op motorproblemen&period; Laat het onmiddellijk controleren&period;</td>
+						</tr>
+						<tr>
+							<td><strong>Abnormale Geluiden&colon;</strong></td>
+							<td>Ongewone geluiden zoals bonken&comma; tikken&comma;
+								ratelen of sissen kunnen wijzen op problemen in de motor of andere systemen&period;</td>
+						</tr>
+						<tr>
+							<td><strong>Trillen of Schudden&colon;</strong></td>
+							<td>Als je auto trilt of schudt tijdens het
+								rijden&comma; kan dit duiden op een onbalans in de banden&comma; problemen met de
+								ophanging
+								of
+								remproblemen&period;</td>
+						</tr>
+						<tr>
+							<td><strong>Vreemde Geuren&colon;</strong></td>
+							<td>Ongebruikelijke geuren&comma; zoals verbrand
+								rubber&comma; olie of koelvloeistof&comma; kunnen duiden op lekkages of
+								oververhitting&period;</td>
+						</tr>
+						<tr>
+							<td><strong>Ratelende Remmen</strong>&colon;</td>
+							<td>Als je tijdens het remmen een ratelend geluid
+								hoort&comma; kan dit duiden op versleten remblokken of remschijven&period;</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+		</section>
+	</main>
+
+	<aside>
+		<input type="checkbox" name="expandAside" id="expandAside">
+		<label for="expandAside">Go To <span>&darr;</span></label>
+
+		<ul>
+			<li>
+				<a href="#">Top</a>
+			</li>
+			<li>
+				<a href="#Voor-dat-je-begint">Voor dat je begint&excl;</a>
+			</li>
+			<li>
+				<a href="#problemen-opsporen">problemen opsporen</a>
+			</li>
+		</ul>
+	</aside>
+
+	<footer id="cookiesMessage">
+		<section>
+			<p>
+				This site uses cookies to improve your browsing experience&comma; perform analytics and research&comma;
+				and conduct advertising&period;
+			</p>
+			<p>
+				Clicking Accept all Cookies indicates you agree to our use of cookies on your device&period;
+			</p>
+			<p>
+				Clicking Reject all means you do not agree to our use of non&hyphen;strictly necessary cookies on your
+				device&period;
+			</p>
+		</section>
+
+		<section>
+			<button id="acceptCookies" onclick="removeCookie()">Accept all cookies</button>
+			<button id="rejectCookies" onclick="removeCookie()">Reject all cookies</button>
+		</section>
+	</footer>
+
+	<footer id="bottemFooter">
+		<nav id="footerNav">
+			<ul>
+				<li>
+					<a href="index.html">home</a>
+				</li>
+				<li>
+					<a href="product.html">Product</a>
+				</li>
+				<li>
+					<a href="service.html">Service</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<a href="index.html" id="footerLogo">
+			<img src="img/logo-svg.svg" title="logo" alt="logo" class="logo">
+		</a>
+		<p class="copyright">Copyright &copy; 2022 &vert; Made by Ahmad</p>
+	</footer>
+</body>
+
+</html>
