@@ -29,9 +29,7 @@ h2 {
 
 .spacer {
 	display: block;
-	height: 2px;
 	width: 100%;
-	background-color: #000;
 
 	border-width: 1px;
 	border-style: solid;
