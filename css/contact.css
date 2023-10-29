@@ -1,7 +1,3 @@
-.title {
-	text-align: center;
-}
-
 #contact::before {
 	content: "";
 	position: absolute;
@@ -24,12 +20,20 @@
 	width: 100%;
 }
 
+#contact>form {
+	width: 100%;
+}
+
 #contactForm {
-	padding: 8px;
+	padding: 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	width: 100%;
+}
+
+#contactForm>* {
+	font-size: 1rem;
 }
 
 #contactForm select,
@@ -50,6 +54,22 @@
 
 #contactForm label {
 	margin-top: 1rem;
+}
+
+#contactForm button[type=submit] {
+	padding: 8px 16px;
+	margin: 8px 0;
+	align-self: flex-end;
+	background-color: #82ff82;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+
+#contactForm button[type=submit] #arrow {
+	font-size: 2rem;
 }
 
 @media (min-width: 768px) {

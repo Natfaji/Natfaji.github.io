@@ -5,10 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Onderhoud je voertuig &vert; Contact</title>
+	<link rel="icon" type="image/x-icon" href="img/logo-svg.svg">
 	<meta name="author" content="Ahmad Natfaji">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/contact.css">
-	<script src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -22,6 +23,7 @@
 			<a href="obd2.html">OBD2</a>
 			<a href="onderDeMotorkap.html">Onder De Motorkap</a>
 			<a href="naardeautogarage.html">Naar de autogarage</a>
+			<a href="tips.html">Tips</a>
 			<a href="contact.html">Contact</a>
 		</nav>
 
@@ -33,29 +35,35 @@
 
 	<main>
 		<h1 class="title">Contact</h1>
+
 		<section id="contact">
-			<form id="contactForm" action="thankyou.html" method="post">
-				<label for="prefix">Aanhef: &ast;</label>
-				<select name="prefix" id="prefix" required>
-					<option value="" selected disabled>Kies een aanhef</option>
-					<option value="dhr">Dhr</option>
-					<option value="mevr">Mevr</option>
-					<option value="other">Anders</option>
-				</select>
+			<form action="thankyou.html" method="post">
+				<fieldset id="contactForm">
+					<legend>Contact</legend>
 
-				<label for="name">Naam: &ast;</label>
-				<input type="text" name="name" id="name" placeholder="Naam" required>
+					<label for="prefix">Aanhef&colon; &ast;</label>
+					<select name="prefix" id="prefix" required>
+						<option value="" selected disabled>Kies een aanhef</option>
+						<option value="dhr">Dhr</option>
+						<option value="mevr">Mevr</option>
+						<option value="other">Anders</option>
+					</select>
 
-				<label for="email">Email: &ast;</label>
-				<input type="email" name="email" id="email" placeholder="Email" required>
+					<label for="name">Naam&colon; &ast;</label>
+					<input type="text" name="name" id="name" placeholder="Naam" required>
 
-				<label for="phoneNumber">Telefoonnummer: </label>
-				<input type="tel" name="phoneNumber" placeholder="Telefoonnummer" id="phoneNumber">
+					<label for="email">Email&colon; &ast;</label>
+					<input type="email" name="email" id="email" placeholder="Email" required>
 
-				<label for="request">Vraag/verzoek: &ast;</label>
-				<textarea name="request" id="request" cols="30" rows="10" placeholder="U vraag of verzoek"
-					required></textarea>
-				<button type="submit">Versturen</button>
+					<label for="phoneNumber">Telefoonnummer&colon; </label>
+					<input type="tel" name="phoneNumber" placeholder="Telefoonnummer" id="phoneNumber">
+
+					<label for="request">Vraag/verzoek&colon; &ast;</label>
+					<textarea name="request" id="request" cols="30" rows="10" placeholder="U vraag of verzoek"
+						required></textarea>
+
+					<button type="submit"><strong>Versturen</strong> <span id="arrow">&raquo;</span></button>
+				</fieldset>
 			</form>
 		</section>
 	</main>
